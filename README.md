@@ -23,5 +23,5 @@
 3. Открыть: http://127.0.0.1:8080
 
 ## Ссылки
-- Репозиторий: https://github.com/Rustam150/chess-bem-site
-- Демо: https://rustam150.github.io/chess-bem-site/
+- Репозиторий: https://github.com/Rustam150/-chess-bem-site.git
+- Демо: https://rustam150.github.io/-chess-bem-site/
