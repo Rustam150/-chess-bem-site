@@ -1,0 +1,16 @@
+{
+  "name": "chess-bem-site",
+  "version": "1.0.0",
+  "description": "Примененные принципы:\r Инкапсуляция (ООП):\r Класс Piece хранит данные о фигуре (тип, цвет, символ). Внешний код не меняет их напрямую, а получает через конструктор и методы.\r Класс Board скрывает внутреннее состояние массива boardState. Доступ к нему возможен только через методы movePiece или render.\r SRP (Single Responsibility Principle - SOLID):\r Piece.js отвечает только за описание фигуры.\r Board.js отвечает за отрисовку DOM, обработку событий и логику перемещения.\r main.js отвечает только за инициализацию.\r BEM (Методология):\r Использованы блоки: .header, .game-board, .cell, .info-block.\r Использованы элементы: .header__title, .game-board__grid.\r Использованы модификаторы: .cell--black, .cell--selected, .game-board__button--reset.\r CSS не имеет вложенности более 1 уровня, что обеспечивает переиспользуемость стилей.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

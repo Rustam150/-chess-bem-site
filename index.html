@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шахматы онлайн | КТ №4</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page">
+  
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__title">Шахматы Online</h1>
+      <p class="header__subtitle">Проект по дисциплине «Архитектурные подходы»</p>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__container">
+      <section class="game-board">
+        <div class="game-board__info">
+          <span class="game-board__status">Ход: <span id="current-turn" class="game-board__turn-text">Белые</span></span>
+          <button id="reset-btn" class="game-board__button game-board__button--reset">Сбросить</button>
+        </div>
+        <div id="board-container" class="game-board__grid"></div>
+      </section>
+
+      <aside class="info-block">
+        <h2 class="info-block__title">Примененные принципы</h2>
+        <ul class="info-block__list">
+          <li class="info-block__item"><strong>S (SRP):</strong> Piece хранит данные, Board управляет логикой и DOM.</li>
+          <li class="info-block__item"><strong>O (OCP):</strong> Правила ходов изолированы, легко добавлять новые.</li>
+          <li class="info-block__item"><strong>BEM:</strong> Плоские классы .cell, .cell--black, .piece, .game-board__grid.</li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text"> 2026 Шахматы Онлайн | Учебный проект | TS</p>
+  </footer>
+
+  <script src="js/Piece.js"></script>
+  <script src="js/Board.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

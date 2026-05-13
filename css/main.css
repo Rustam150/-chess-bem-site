@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.header__subtitle {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.main {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.main__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+}
+
+.game-board {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.game-board__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.game-board__turn-text {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.game-board__button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.game-board__button--reset {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.game-board__button--reset:hover {
+  background-color: #c0392b;
+}
+
+.game-board__grid {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+  border: 5px solid #34495e;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell--white {
+  background-color: #ecf0f1;
+}
+
+.cell--black {
+  background-color: #95a5a6;
+}
+
+.cell--selected {
+  background-color: #f1c40f !important;
+}
+
+.piece {
+  cursor: grab;
+}
+
+.info-block {
+  max-width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.info-block__title {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.info-block__list {
+  list-style-type: none;
+}
+
+.info-block__item {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #2c3e50;
+  color: white;
+}
